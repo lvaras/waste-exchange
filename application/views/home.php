@@ -1,4 +1,5 @@
 <div class="row main_container">
+	Questo è un testo di prova dell'header
 	<?php foreach ($posts as $post) : ?>
 	<div class="col-md-3 clearfix">
 		<a href="<?= site_url("posts/single_post/" . $post["id"]); ?>">

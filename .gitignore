@@ -2,9 +2,8 @@
 
 uploads/*
 
-application/cache/*
-application/config/database.php
-application/config/config.php
+application/cache/* 
+application/config/*
 !application/cache/index.html
 !application/cache/.htaccess
 

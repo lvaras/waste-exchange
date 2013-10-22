@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Combo</title>
-        <meta name="description" content="">
+        <meta name="description" content="descrizione di prova">
         <meta name="viewport" content="width=device-width"> 
         <link rel="stylesheet" href="<?php echo base_url(); ?>css/normalize.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>css/bootstrap.min.css">

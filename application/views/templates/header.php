@@ -15,6 +15,7 @@
         <script src="<?php echo base_url(); ?>js/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
+    <!-- Container -->
     <div class="container">
     	<header class="row">
     		<div class="logo col-md-6">

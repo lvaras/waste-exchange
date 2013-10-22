@@ -62,7 +62,7 @@
  
       <label for="userfile">Carica immagini</label>
       <input type="file" name="da_file" id="da_file" size="20" />
-    
+      <br/>
       <input type="submit" name="submit" id="submit" />
       
       <div id="files"></div>

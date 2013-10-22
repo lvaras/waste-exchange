@@ -1,4 +1,10 @@
+        
+        <footer class="row">
+        	<span style="float: left">&copy; copiright 2013 all right reserved</span>
+        	<a href="<?= site_url(); ?>/admin" style="float: right">reserved area</a>
+        </footer>
         </div>
+        <!-- //Container -->
         <script>
         	var da_app = {};
         	da_app.base_path = "<?= base_url(); ?>";

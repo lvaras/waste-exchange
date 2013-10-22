@@ -20,7 +20,7 @@ function get_featured_image ( $post_id )
  * @example: this func limits the number of words by a given number of characters as input, it not breaks words
  */
 function limit_string_by_chars ( $string , $number_of_chars )
-{
+{	
 	$array_string = str_split($string);
 	$array_string = array_slice( $array_string , 0 , $number_of_chars);
 	for ($counter = sizeof($array_string) - 1 ; $counter >= 0 ; $counter--)
@@ -31,4 +31,5 @@ function limit_string_by_chars ( $string , $number_of_chars )
 			return implode($array_to_return);
 		}
 	}
+	return $string;
 }

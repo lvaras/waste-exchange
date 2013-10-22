@@ -1,10 +1,6 @@
 <?php
 class Post extends CI_Model {
 
-	var $title   = '';
-	var $content = '';
-	var $date    = '';
-
 	function __construct()
 	{
 		parent::__construct();
@@ -35,7 +31,7 @@ class Post extends CI_Model {
 	
 	function update_post()
 	{
-	
+		
 	}
 	
 	/**
@@ -44,6 +40,16 @@ class Post extends CI_Model {
 	function get_posts()
 	{
 		$this->db->order_by("post_date", "desc");
+		$query = $this->db->get("post");
+		return $query->result_array();
+	}
+	
+	/**
+	 * get all posts and order them by post date DESC
+	 * */
+	function get_unapproved_posts()
+	{
+		$this->db->where("approved" , "0")->order_by("post_date", "desc");
 		$query = $this->db->get("post");
 		return $query->result_array();
 	}

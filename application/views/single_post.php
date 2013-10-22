@@ -1,5 +1,4 @@
-
-<br/><br/>
+<div class="row main_container">
 
 <h2><?= $post->title; ?></h2>
 
@@ -17,4 +16,6 @@
 	<?php foreach ($images as $image) : ?>
 		<img class="col-md-3" style="margin-bottom: 20px;" src="<?= base_url("uploads/" . $image->file_name ); ?>" />
 	<?php endforeach; ?>
+</div>
+
 </div>

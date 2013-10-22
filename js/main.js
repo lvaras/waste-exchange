@@ -62,8 +62,25 @@ $(function () {
 	   }
 	});
 	
+	$('.open-popup-link').magnificPopup({
+		  type:'inline',
+		  midClick: true 
+	});
+	
+	$('.open-popup-link').click(function () {
+		var id = $(this).closest("tr").find("td").first().html();
+		$.ajax({
+			url:  da_app.site_url + "/posts/single_post/" + id,
+			success: function (data) {
+				$("#test-popup .popup_cont").html("");
+				$("#test-popup .popup_cont").append( $(data).find(".main_container") );
+			}
+		})
+		
+	});
+	
 		   
-});
+}); // DOM ready
 
 function refresh_files()
 {

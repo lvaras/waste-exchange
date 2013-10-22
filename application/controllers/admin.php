@@ -9,6 +9,7 @@ class Admin extends CI_Controller {
 		parent::__construct();
 		$this->load->helper( array('url','form') );
 		$this->load->library('session');
+		$this->load->model('post');
 		$this->session_data = $this->session->all_userdata();
 	}
 	
@@ -62,10 +63,9 @@ class Admin extends CI_Controller {
 		{
 			redirect('/admin', 'refresh');
 		}
+		$data["posts"] = $this->post->get_unapproved_posts();
 		$this->load->view('templates/header');
-		$this->load->view('admin_panel');
+		$this->load->view('admin_panel', $data);
 		$this->load->view('templates/footer');
 	}
-	
-	
 }

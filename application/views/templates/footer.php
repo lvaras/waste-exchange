@@ -12,6 +12,7 @@
         </script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
         <script src="<?= base_url(); ?>js/ajaxfileupload.js"></script>
+        <script src="<?= base_url(); ?>js/magnific_popup.js"></script>
         <script src="<?= base_url(); ?>js/main.js"></script>
     </body>
 </html>

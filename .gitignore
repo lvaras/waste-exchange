@@ -8,6 +8,6 @@ application/config/config.php
 !application/cache/index.html
 !application/cache/.htaccess
 
-application/logs/*
+application/logs/* 
 !application/logs/index.html
 !application/logs/.htaccess 
